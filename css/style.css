@@ -1,0 +1,159 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    background:#1f1f1f;
+    color: white;
+    
+}
+/* global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* header */
+header {
+    background: black;
+    color: white;
+    padding-top: 20px;
+    /* min-height: 50px; */
+    border-bottom: green 3px solid;
+}
+
+header a {
+    padding: 0;
+    padding-top: 5px;
+    color: white;
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+}
+
+header .highlight{
+    color: green;
+}
+
+header nav a{
+    transition: 0.4s;
+}
+
+header nav a:hover{
+    background-color: green;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    
+}
+
+/* showcase */
+#showcase h1{
+    font-size: 50px;
+    padding-top: 40px;
+    color: white;
+}
+#showcase p{
+    color:green;
+    font-size: 20px
+}
+#showcase{
+    
+    background: #1f1f1f;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* boxes */
+.features h2{
+    color: white;
+    padding: 5px;
+}
+#boxes{
+    background: green;
+    border-radius: 10px;
+    margin:20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 20%;
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+#box .box h3,p{
+    padding-top: 0px;
+}
+#boxes .box img{
+    width: 80%;
+}
+
+.features{
+    color: #1f1f1f;
+    font-size: 20px;
+    text-align: center;
+}
+footer{
+    padding: 2px;
+    background: black;
+    text-align: center;
+
+
+}
+@media(max-width: 1000px){
+    header #branding,
+    header nav,
+    header nav li
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    #showcase h1{
+        padding-top: 1px;
+        font-size: 30px;
+        margin-top: 80px;
+        
+    }
+    #showcase p{
+        font-size: 17px;
+    }
+    #showcase{
+        min-height: 200px;
+    }
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    #boxes .box img{
+        width: 200px;
+    }
+
+}
